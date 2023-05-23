@@ -15,7 +15,7 @@ import java.awt.event.*;
     /***
      * Step 1 for keyboard control - implements KeyListener
      */
-    public class CheeseWorld implements Runnable, KeyListener {
+    public class Galaxy implements Runnable, KeyListener {
 
         //Variable Definition Section
 
@@ -42,13 +42,13 @@ import java.awt.event.*;
         // Main method definition
         // This is the code that runs first and automatically
         public static void main(String[] args) {
-            CheeseWorld myApp = new CheeseWorld();   //creates a new instance of the game
+            Galaxy myApp = new Galaxy();   //creates a new instance of the game
             new Thread(myApp).start();               //creates a threads & starts up the code in the run( ) method
         }
 
         // Constructor Method - setup portion of the program
         // Initialize your variables and construct your program objects here.
-        public CheeseWorld() {
+        public Galaxy() {
 
             setUpGraphics();
 
@@ -64,7 +64,7 @@ import java.awt.event.*;
 
             //create (construct) the objects needed for the game
             mouse1 = new Mouse(200, 300, 4, 4, astronaughtPic);
-            theCheese = new Astroid(400, 300, 3, -4, asteroidPic);
+            theAstroid = new Astroid(400, 300, 3, -4, asteroidPic);
 
 
         } // CheeseWorld()

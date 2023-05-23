@@ -1,7 +1,7 @@
 package NewGame;
 
 public class Setup {
-    public class Astro {
+    public class Galaxy {
 
         //VARIABLE DECLARATION SECTION
         //Here's where you state which variables you are going to use.
